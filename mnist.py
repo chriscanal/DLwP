@@ -18,3 +18,11 @@ test_labels = to_categorical(test_labels)
 network.fit(train_images,train_labels,epochs=5,batch_size=128)
 test_loss, test_accuracy = network.evaluate(test_images,test_labels)
 print test_accuracy
+import numpy as np
+x = np.array([[[1,],],])
+x.ndim
+train_images.dtype
+digit = train_images[4]
+import matplotlib.pyplot as plt
+plt.imshow(digit, cmap=plt.cm.binary)
+plt.show()
